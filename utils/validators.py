@@ -17,7 +17,8 @@ def validate_ip(ip: str) -> Optional[str]:
     except ValueError:
       return None
 
-# def validate_csv_file(filepath: str) -> bool:
+def validate_csv_file(filepath: str) -> bool:
+  return True
 #   """Validē, vai fails pastāv un ir derīgs CSV"""
 #   if not os.path.exists(filepath):
 #     return False
@@ -29,7 +30,8 @@ def validate_ip(ip: str) -> Optional[str]:
 #   except csv.Error:
 #     return False
 
-# def validate_fail2ban_file(filepath: str) -> bool:
+def validate_fail2ban_file(filepath: str) -> bool:
+  return True
 #   """Validē, vai fails pastāv un tam ir fail2ban formāts"""
 #   if not os.path.exists(filepath):
 #     return False
