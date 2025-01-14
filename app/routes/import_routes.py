@@ -1,7 +1,7 @@
-from flask import Blueprint, jsonify, request, current_app
+from flask import Blueprint, jsonify, request
 from db.database import add_to_blacklist, add_to_whitelist, bulk_add, bulk_add_to_blacklist, bulk_add_to_whitelist
 from app.models.schemas import IPEntry, BulkImportRequest
-from utils.validators import validate_ip, validate_csv_file, validate_fail2ban_file, parse_ip_range
+from utils.validators import validate_ip, parse_ip_range
 import os
 import csv
 import requests
